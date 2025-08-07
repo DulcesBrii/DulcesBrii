@@ -15,3 +15,23 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+document.getElementById("formulario").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const nombre = document.getElementById("nombre").value;
+  const imagen = document.getElementById("imagen").value;
+  const precio = document.getElementById("precio").value;
+  const descripcion = document.getElementById("descripcion").value;
+
+  db.collection("productos").add({
+    nombre,
+    imagen,
+    precio,
+    descripcion
+  }).then(() => {
+    alert("Producto agregado con éxito 🎉");
+    document.getElementById("formulario").reset();
+  }).catch((error) => {
+    console.error("Error al agregar producto: ", error);
+  });
+});
