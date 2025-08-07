@@ -38,3 +38,71 @@ header {
 
 h1 {
   font-size: 2.5em
+
+  /* Importar tipografías elegantes */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFF0F5;
+  color: #5F5F5F;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Great Vibes', cursive;
+  color: #D8A7B1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Botón pastel chic */
+.button {
+  background-color: #E6DAF5;
+  color: #5F5F5F;
+  border: 2px solid #FAD6A5;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #FAD6A5;
+  color: white;
+}
+
+/* Tarjeta de producto */
+.product-card {
+  background-color: white;
+  border: 1px solid #E6DAF5;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 15px;
+  text-align: center;
+  margin: 15px;
+  width: 250px;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #5F5F5F;
+}
+
