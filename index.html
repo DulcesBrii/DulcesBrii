@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DulcesBrii</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo DulcesBrii" class="logo">
+    <h1>DulcesBrii 🍬</h1>
+  </header>
+
+  <section class="auth">
+    <div class="registro">
+      <h2>Crear cuenta</h2>
+      <input type="email" id="email" placeholder="Correo electrónico">
+      <input type="password" id="password" placeholder="Contraseña">
+      <button onclick="registrarUsuario()">Registrarse</button>
+    </div>
+
+    <div class="login">
+      <h2>Iniciar sesión</h2>
+      <input type="email" id="emailLogin" placeholder="Correo electrónico">
+      <input type="password" id="passwordLogin" placeholder="Contraseña">
+      <button onclick="iniciarSesion()">Entrar</button>
+    </div>
+  </section>
+
+  <nav>
+    <ul>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#pedidos">Mis pedidos</a></li>
+    </ul>
+  </nav>
+
+  <section id="catalogo">
+    <h2>Catálogo de productos</h2>
+    <div class="productos">
+      <!-- Aquí irán los productos -->
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre">
+      <input type="email" placeholder="Tu correo">
+      <textarea placeholder="Tu mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section id="pedidos">
+    <h2>Mis pedidos</h2>
+    <div class="historial">
+      <!-- Aquí se mostrarán los pedidos -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DulcesBrii</p>
+    <div class="redes">
+      <a href="#">Instagram</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Correo</a>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
 
